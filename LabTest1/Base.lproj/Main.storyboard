@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LabTest1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-350" y="126"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="7HH-Yd-5si">
+            <objects>
+                <pageViewController storyboardIdentifier="PageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="ecH-D3-Tj5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atm-Sd-3h4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="126"/>
+        </scene>
+        <!--Item View Controller-->
+        <scene sceneID="KWz-MV-2H2">
+            <objects>
+                <viewController storyboardIdentifier="ItemController" id="84r-NQ-we7" customClass="ItemViewController" customModule="LabTest1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eD9-km-dpL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PD9-7O-2WA">
+                                <rect key="frame" x="67" y="117" width="240" height="410"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ui6-9d-vae" firstAttribute="bottom" secondItem="PD9-7O-2WA" secondAttribute="bottom" constant="140" id="Bjr-lV-VcY"/>
+                            <constraint firstItem="PD9-7O-2WA" firstAttribute="top" secondItem="Ui6-9d-vae" secondAttribute="top" constant="97" id="FNq-Tk-duB"/>
+                            <constraint firstItem="PD9-7O-2WA" firstAttribute="centerX" secondItem="eD9-km-dpL" secondAttribute="centerX" id="UP3-Zi-2hY"/>
+                            <constraint firstItem="PD9-7O-2WA" firstAttribute="leading" secondItem="Ui6-9d-vae" secondAttribute="leading" constant="67" id="wdj-Ma-vHs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ui6-9d-vae"/>
+                    </view>
+                    <connections>
+                        <outlet property="uiImageView" destination="PD9-7O-2WA" id="aBH-aS-Xh2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APC-Yu-2fV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.5999999999999" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>
