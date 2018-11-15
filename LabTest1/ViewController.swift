@@ -26,12 +26,12 @@ class ViewController: UIViewController,UIPageViewControllerDataSource, UIPageVie
         {
             let firstController = getItemController(0)!
             let startingViewController = [firstController]
-            pageController.setViewControllers(startingViewController, direction: UIPageViewController.NavigationDirection.forward, animated: false, completion: nil)
+            pageController.setViewControllers(startingViewController, direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
         }
         pageViewController = pageController
-        addChild(pageViewController!)
+        addChildViewController(pageViewController!)
         self.view.addSubview(pageViewController!.view)
-        pageViewController?.didMove(toParent: self)
+        pageViewController?.didMove(toParentViewController: self)
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
